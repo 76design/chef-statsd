@@ -24,3 +24,6 @@ default["statsd"]["graphite"]["prefix_counter"]   = "counters"
 default["statsd"]["graphite"]["prefix_timer"]     = "timers"
 default["statsd"]["graphite"]["prefix_gauge"]     = "gauges"
 default["statsd"]["graphite"]["prefix_set"]       = "sets"
+
+# Placeholder for extra config params.
+default["statsd"]["extra_config"] = {}
