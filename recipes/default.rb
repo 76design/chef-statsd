@@ -48,7 +48,7 @@ template "#{node["statsd"]["conf_dir"]}/config.js" do
       :prefixGauge       => node["statsd"]["graphite"]["prefix_gauge"],
       :prefixSet         => node["statsd"]["graphite"]["prefix_set"]
     }
-  }.merge(node['statsd']['extra_config'])
+  }.merge(node["statsd"]["extra_config"])
 
   variables(:config_hash => config_hash)
   
