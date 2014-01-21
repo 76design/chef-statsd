@@ -1,4 +1,4 @@
-# statsd [![Build Status](https://secure.travis-ci.org/hectcastro/chef-statsd.png?branch=master)](http://travis-ci.org/hectcastro/chef-statsd)
+# statsd [![Build Status](https://secure.travis-ci.org/76design/chef-statsd.png?branch=master)](http://travis-ci.org/76design/chef-statsd)
 
 ## Description
 
@@ -45,7 +45,7 @@ Installs and configures StatsD.
 * `node["statsd"]["delete_counters"]` - Don't send values to graphite for
   inactive counters (default: `false`).
 * `node["statsd"]["username"]` - Will be used for process supervision (default: `stasd` )
-
+* `node["statsd"]["extra_config"]` - Any additional configuration that should be included in the StatsD config file
 * `node["statsd"]["graphite"]["legacy_namespace"]` - Flag to use legacy
   namespace (default: `true`).
 * `node["statsd"]["graphite"]["global_prefix"]` - Global prefix to use for
